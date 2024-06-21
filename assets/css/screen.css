@@ -1637,11 +1637,11 @@ Search                         LOGO                    Login Subscribe
 /* 11.2. Without sidebar */
 
 .gh-container:not(.has-sidebar) :is(.gh-container-title, .gh-main, .gh-more) {
-    grid-column: 3 / span 12;
+    grid-column: 1 / span 16;
 }
 
 .gh-container.is-list.no-image:not(.has-sidebar) :is(.gh-container-title, .gh-main, .gh-more) {
-    grid-column: 4 / span 10;
+    grid-column: 1 / span 16;
 }
 
 .gh-header:is(.is-highlight, .is-magazine) ~ .gh-container.is-grid:not(.has-sidebar) :is(.gh-container-title, .gh-main, .gh-more) {
@@ -1716,9 +1716,9 @@ Search                         LOGO                    Login Subscribe
     }
 }
 
-.gh-container.is-list .gh-card:not(.no-image) .gh-card-wrapper {
+/* .gh-container.is-list .gh-card:not(.no-image) .gh-card-wrapper {
     max-width: 600px;
-}
+} */
 
 .gh-container.is-list .gh-card-title {
     --factor: 1.05;
@@ -2512,7 +2512,7 @@ figcaption a {
 }
 
 .gh-archive:not(.has-sidebar):not(.has-image) .gh-archive-inner {
-    grid-column: 3 / span 12;
+    grid-column: 1 / span 16;
 }
 
 .gh-archive .gh-article-image {
