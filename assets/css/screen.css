@@ -396,7 +396,7 @@ button.gh-form-input {
 }
 
 .gh-canvas > * {
-    grid-column: main;
+    grid-column: wide;
 }
 
 .kg-width-wide,
@@ -1953,8 +1953,6 @@ Search                         LOGO                    Login Subscribe
 /* 14.1. Article */
 
 .gh-article {
-    --container-width: 1120px;
-
     word-break: break-word;
 }
 
@@ -1991,6 +1989,7 @@ Search                         LOGO                    Login Subscribe
     gap: 8px;
     margin-top: 20px;
     margin-left: 6px;
+    grid-column: wide;
 }
 
 .gh-article-author-image {
