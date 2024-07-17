@@ -233,6 +233,7 @@ a:hover {
     letter-spacing: inherit;
     line-height: 1.1;
     border: 0;
+    border-radius: 40px;
     background-color: transparent;
     outline: none;
     transition: 0.3s ease-in-out;
@@ -1593,7 +1594,7 @@ Search                         LOGO                    Login Subscribe
     grid-column: span 12;
 }
 
-.home-template .gh-more {
+.home-template .gh-feed:has(> :nth-child(12):last-child) ~ .gh-more {
     display: block;
 }
 
@@ -2376,6 +2377,12 @@ blockquote.kg-blockquote-alt {
     opacity: 1;
 }
 
+.kg-bookmark-card a.kg-bookmark-container,
+.kg-bookmark-card a.kg-bookmark-container:hover {
+    background: var(--background-color) !important;
+    color: var(--color-darker-gray) !important;
+}
+
 .kg-bookmark-card .kg-bookmark-content {
     padding: 1.15em;
 }
@@ -2701,7 +2708,7 @@ figcaption a {
     letter-spacing: 0;
 }
 
-.has-serif-title :is(.gh-button, .gh-form) {
+.has-serif-title :is(.gh-button, .gh-form, .gh-form-input) {
     border-radius: 0;
 }
 
